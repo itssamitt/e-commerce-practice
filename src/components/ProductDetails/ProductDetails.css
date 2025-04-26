@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.productdetails{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+.firstimagebig{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailsimage{
+    width: 80%;
+}
+.detailssection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 5rem;
+    font-family: "Poppins", sans-serif;
+}
+.smaltitle{
+    font-size: 1rem;
+    color: rgb(95, 95, 95);
+}
+.detailtitle{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.detailsdesc{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: rgb(79, 79, 79);
+}
+.detailsprice{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.descsizetext{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+.sizebox{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.sizebox p{
+    border : 0.5px solid gray;
+    padding: 0.3rem 1.2rem;
+    border-radius: 45%;
+}
+.count{
+    border: 0.5px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    cursor: pointer;
+    margin-top: 1.8rem;
+}
+.count i{
+    padding: 0.8rem 1.3rem;
+}
+.adtocartbtn{
+    margin-top: 2rem;
+    padding: 0.5rem 35%;
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    border: 1px solid #013334;
+    background-color: #013334;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px){
+    .productdetails{
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+    .detailsimage{
+        width: 80%;
+    }
+    .detailssection{
+        padding-right: 0rem;
+    }
+}
+@media (max-width:1200px){
+    .productdetails{
+        gap: 0rem;
+        flex-direction: column;
+    }
+    .firstimagebig{
+        width: 100%;
+    }
+    .detailssection{
+        width: 100%;
+        padding-right: 0rem;
+    }
+    .adtocartbtn{
+        font-size: 1.2rem;
+        padding: 0.7rem 40%;
+        align-self: center;
+    }
+}
+@media (max-width:767px){
+    .productdetails{
+        padding: 1rem 1rem;
+    }
+    .detailsimage{
+        width: 95%;
+    }
+    .smaltitle{
+        font-size: 1rem;
+        color: rgb(95, 95, 95);
+    }
+    .detailtitle{
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+    .detailsdesc{
+        margin-top: 1rem;
+    }
+    .detailsprice{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    .descsizetext{
+        margin-top: 1rem;
+    }
+    .sizebox{
+        font-size: 0.8rem;
+        gap: 0.5rem;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .sizebox p{
+        border : 0.5px solid gray;
+        padding: 0.3rem 1rem;
+    }
+    .count{
+        margin-top: 1.5rem;
+    }
+    .count i{
+        padding: 0.8rem 1.7rem;
+    }
+    .adtocartbtn{
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0.5rem 20%;
+        width: 100%;
+    }
+}
+@media (max-width:360px){
+    .detailtitle{
+        font-size: 1.35rem;
+        line-height: 30px;
+        font-weight: 500
+    }
+    .detailsdesc{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,100 @@
+.cartpage{
+    width: 100%;
+    padding: 2rem 3rem;
+}
+.yourcart{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+.cartupperbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.408);
+}
+.midddleposition{
+    position: relative;
+    left: 9%;
+}
+.cartupperbox p{
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color: rgb(92, 92, 92);
+}
+.somecalculation{
+    width: 100%;
+    padding: 2rem 4rem;
+}
+.amountcalculate{
+    width: 40%;
+}
+.calctitle{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+.subtotalbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+.subtotalbox p, .shippingcharge p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.shippingcharge{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 0.5px solid gray;
+}
+.totalprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 0.5px solid gray;
+}
+.totalprice p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.checkout{
+    color: white;
+    background-color: #013334;
+    margin-top: 2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    text-align: center;
+}
+@media (max-width:1200px){
+    .cartpage{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+@media (max-width:767px){
+    .yourcart{
+        border-bottom: 0.5px solid rgb(188, 188, 188);
+    }
+    .cartupperbox{
+        display: none;
+    }
+    .somecalculation{
+        padding: 0rem 1.5rem;
+    }
+    .amountcalculate{
+        width: 100%;
+    }
+    .subtotalbox p, .shippingcharge p{
+        font-size: 1.25rem;
+    }
+    .checkout{
+        margin-top: 1.5rem;
+    }
+}

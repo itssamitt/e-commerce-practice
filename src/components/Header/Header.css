@@ -1,0 +1,165 @@
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+.link{
+    text-decoration: none;
+}
+.cartlink{
+    position: relative;
+    text-decoration: none;
+}
+.carticon{
+    color: white;
+}
+.cartnumb{
+    color: white;
+    position: absolute;
+    bottom: -40%;
+    right: -40%;
+    font-size: 0.7rem;
+    background-color: black;
+    padding: 0.15rem 0.3rem;
+    border-radius: 50%;
+}
+.active{
+    background-color: red;
+}
+.firstheader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: white;
+}
+.headersocial{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.middletitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.headarrow{
+    font-size: 0.9rem;
+}
+.hiddenside{
+    opacity: 0;
+}
+.secondheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #013334;
+    padding: 0.5rem 2.3rem;
+}
+.navbaar{
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.logo{
+    width: 6rem;
+}
+.navbaarside{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+.navouter{
+    width: 0;
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.navbaarmain{
+    width: 0;
+    height: calc(100vh - 8rem);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(187, 187, 187, 0.478);
+    position: relative;
+}
+.navbaarbox{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: -28rem;
+    transition: all 0.3s ease-in-out;
+}
+.navsitems{
+    margin-top: 2rem;
+}
+.realnavbaar{
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    color: black;
+}
+.realnavbaar:hover{
+    background-color: rgba(216, 216, 216, 0.495);
+}
+.navbaarsocial{
+    width: 100%;
+    background-color: #013334;
+    padding: 2rem 2.8rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+@media (max-width: 767px) {
+    .firstheader{
+        justify-content: center;
+        padding: 0.5rem 2rem;
+    }
+    .headersocial{
+        display: none;
+    }
+    .middletitle{
+        font-size: 0.9rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .secondheader{
+        padding: 0.5rem 1.5rem;
+    }
+    .navbaar{
+        font-size: 1.5rem;
+    }
+    .usericon{
+        display: none;
+    }
+    .navbaarside{
+        gap: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .navbaarmain{
+        height: calc(100vh - 8rem);
+    }
+    .navbaarbox{
+        width: 100%;
+    }
+}
+@media (max-width: 360px){
+    
+    .navbaarmain{
+        height: calc(100vh - 8rem);
+    }
+}

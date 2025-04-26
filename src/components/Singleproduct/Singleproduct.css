@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.perproductbox{
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow:  1px 1px 10px #dcdcdc75,
+             -1px -1px 10px #f0f0f06d;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.perproductbox:hover{
+    box-shadow:  9px 9px 18px #d0d0d0,
+             -9px -9px 18px #f0f0f0;
+}
+.perproductbox img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.perproductbox h4{
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: rgb(25, 25, 25);
+}
+.smallscreen{
+    display: none;
+}
+
+.perproductbox p{
+    margin-bottom: 1rem;
+    color: rgb(57, 57, 57);
+}
+@media (max-width:767px){
+    .perproductbox{
+        gap: 0.2rem;
+    }
+    .perproductbox h4{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .bigscreen{
+        display: none;
+    }
+    .smallscreen{
+        display: inline-block;
+    }
+    .perproductbox p{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+}

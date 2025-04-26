@@ -1,0 +1,34 @@
+.filter{
+    background-color: white;
+    width: 20%;
+}
+.filtertext{
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+}
+.pricefilter{
+    width: 100%;
+    border-top: 0.5px solid gray;
+}
+.filtermainbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.filterboxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
+}
+@media (max-width:1200px){
+    .filter{
+        display: none;
+    }
+}

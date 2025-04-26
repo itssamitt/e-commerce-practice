@@ -1,0 +1,42 @@
+.emptycart{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.emptytext{
+    font-size: 2.2rem;
+}
+.continuebtn{
+    background-color: #013334;
+    color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 30px;
+}
+@media (max-width: 1200px){
+    .emptycart{
+        height: 40rem;
+    }
+    .emptytext{
+        font-size: 2.5rem;
+    }
+    .continuebtn{
+        font-size: 1.2rem;
+        padding: 1rem 4rem;
+    }
+}
+@media (max-width: 767px){
+    .emptycart{
+        height: 20rem;
+    }
+    .emptytext{
+        font-size: 2.2rem;
+    }
+    .continuebtn{
+        font-size: 1rem;
+        padding: 0.9rem 3rem;
+    }
+}

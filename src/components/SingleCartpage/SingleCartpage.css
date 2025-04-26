@@ -1,0 +1,105 @@
+.cartsingle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.192);
+}
+.cartsinglefirst{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cartsingleimg{
+    width: 10rem;
+}
+.cartsingletitle{
+    font-size: 1.1rem;
+}
+.cartsingleall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 25%;
+}
+.cartsinglebutton{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid gray;
+}
+.cartsinglebutton i{
+    padding: 0.7rem 1.5rem;
+}
+.cartprice{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.smallcartsingle{
+    display: none;
+}
+
+
+.smalforflex{
+    width: 100%;
+    display: flex;
+}
+.smallcartimg{
+    width: 40%;
+}
+.smallrightdetail{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+.smallrighttitle{
+    font-size: 1.15rem;
+    color: rgb(83, 83, 83);
+}
+.smalbuttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.smalbuttons i{
+    color: gray;
+}
+.smallcountbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid gray;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.smallcountbtn i{
+    padding: 0.3rem 0.9rem;
+}
+.smallpricess{
+    color: black;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+.offspan{
+    color: #044f52;
+}
+
+
+@media (max-width: 767px){
+    .cartsingle{
+        display: none;
+    }
+    .smallcartsingle{
+        display: inline-block;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 0.5px solid rgb(208, 208, 208);
+    }
+}
