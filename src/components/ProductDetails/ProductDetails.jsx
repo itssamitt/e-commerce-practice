@@ -1,13 +1,21 @@
 import React from "react";
 import "./ProductDetails.css";
-import { useDispatch } from "react-redux";
-import { addtocart } from "../../redux/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addtocart, increasenumber, decreasenumber } from "../../redux/CartSlice";
 
 const ProductDetails = ({ product }) => {
   const dispatch = useDispatch()
+  const productnum = useSelector((state)=> state.cart.productnumber)
 
   function addcart(item){
     dispatch(addtocart(item))
+  }
+
+  function increaseproduct(){
+    dispatch(increasenumber())
+  }
+  function decreaseproduct(){
+    dispatch(decreasenumber())
   }
   
   return (
@@ -31,9 +39,9 @@ const ProductDetails = ({ product }) => {
               ))}
             </div>
           <div className="count">
-            <i className="fa-light fa-minus"/>
-            <p>1</p>
-            <i className="fa-light fa-plus"/>
+            <i onClick={decreaseproduct} className="fa-light fa-minus"/>
+            <p>{productnum}</p>
+            <i onClick={increaseproduct} className="fa-light fa-plus"/>
           </div>
           <div onClick={()=>{addcart(product)}} className="adtocartbtn">Add to cart</div>
         </div>
