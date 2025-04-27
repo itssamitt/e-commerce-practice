@@ -35,6 +35,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
+        <div className="checking">amit</div>
         <div className="firstheader">
           <div className="headersocial">
             <i className="fa-brands fa-facebook" />
