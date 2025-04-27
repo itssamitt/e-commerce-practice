@@ -55,12 +55,9 @@ function App() {
       path: "/collection/necklaces",
       element: <Necklaces />,
     },
-  ],
-  {
-    basename: "/e-commerce-practice",
-  }
+  ]
 
-);
+  );
 
   return (
     <>
