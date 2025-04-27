@@ -12,7 +12,7 @@ export const cartslice = createSlice({
             if (isexist) {
                 isexist.quantity += state.productnumber
                 isexist.amount += action.payload.price
-                state.productnumber = 0
+                state.productnumber = 1
             } else {
                 const newItem = {
                     ...action.payload,
@@ -20,7 +20,7 @@ export const cartslice = createSlice({
                     amount: action.payload.price
                 };
                 state.value.push(newItem)
-                state.productnumber = 0
+                state.productnumber = 1
             }
         },
         decrease(state, action) {
@@ -40,7 +40,13 @@ export const cartslice = createSlice({
             state.productnumber += 1
         },
         decreasenumber(state, action){
-            state.productnumber -= 1
+            if(state.productnumber !== 1){
+                state.productnumber -= 1
+            }
+            else{
+                state.productnumber = 1
+            }
+            
         }
     }
 })
